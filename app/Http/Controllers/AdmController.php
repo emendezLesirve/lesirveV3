@@ -14,7 +14,7 @@ class AdmController extends Controller
     
       //  $product= new Product();
         
-        return Product::all();
+     //   return Product::all();
 
         return view("adm");
 

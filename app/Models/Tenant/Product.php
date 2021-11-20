@@ -7,5 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use UsesTenantConnection;
+   use UsesTenantConnection;
+
+   protected $table='products';
+
+   protected $primaryKey='id';
+
+   public $timestamps=false;
+
+   protected $fillable =[
+       'name',
+       'price'
+
+   ];
+
+   protected $guarded =[
+
+   ];
 }
