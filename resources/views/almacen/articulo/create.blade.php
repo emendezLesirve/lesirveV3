@@ -24,13 +24,23 @@
             	<label for="name">Nombre</label>
             	<input type="text" name="name"require value="{{old('name')}}" class="form-control" placeholder="Nombre...">
             </div>
-   </div>
+      </div>
+
 		<div class="col-lg-6 col-sm-6 col-xs-12">
 		<div class="form-group">
             	<label for="price">Precio</label>
             	<input type="text" name="price"require value="{{old('price')}}" class="form-control" placeholder="Precio...">
             </div>
 		</div>
+
+		<div class="col-lg-6 col-sm-6 col-xs-12">
+		<div class="form-group">
+            	<label for="img">Imagen</label>
+            	<input type="file" name="img" class="form-control">
+            </div>
+		</div>
+
+
 		<div class="col-lg-6 col-sm-6 col-xs-12">
 		   <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>

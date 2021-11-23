@@ -18,6 +18,7 @@
                     <th>Id</th>
 					<th>Nombre</th>
                     <th>Precio</th>
+					<th>Img</th>
 					
 				</thead>
                @foreach ($articulos as $art)
@@ -25,6 +26,9 @@
                     <td>{{ $art->id}}</td>
 					<td>{{ $art->name}}</td>
                     <td>{{ $art->price}}</td>
+					<td>
+					      <img src="{{asset('imagenes/articulos/'.$art->img)}}" alt="{{ $art->name}}" height="100px" width="100px" class="img-thumbnail">
+					</td>
 	
 				<td>
 				<a href="{{URL::action('ArticuloController@edit',$art->id)}}"><button class="btn btn-info">Editar</button></a>
@@ -35,7 +39,7 @@
 				@endforeach
 			</table>
 		</div>
-		
+		{{$articulos->render()}}
 	</div>
 </div>
 

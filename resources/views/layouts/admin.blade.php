@@ -30,7 +30,9 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>AD</b>V</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>leSirve</b></span>
+          @guest
+          <span class="logo-lg" href="{{ route('login') }}"><b>{{ __('HOME') }}</b></span>
+          @endguest
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->

@@ -28,6 +28,7 @@ class ArticuloFormRequest extends FormRequest
 
             'name'=>'required|max:50',
             'price'=>'max:256',
+            ''
 
         ];
     }

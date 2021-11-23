@@ -8,7 +8,8 @@ Route::middleware(['web'])
     ->as('tenant.')
     ->group(function () {
         Route::get('/home', 'HomeController@index')->name('home');
-       // Route::resource('/adm', 'AdmController@index');
+        Route::get('/adm', 'AdmController@index')->name('adm');
+        Route::get('/vista', 'VistaController@index')->name('vista');
         Route::resource('/adm/articulos', 'ArticuloController');
       /*  Route::get('/adm/articulos/create', 'ArticuloController@create');
         Route::post('/adm/articulos', 'ArticuloController@store');
